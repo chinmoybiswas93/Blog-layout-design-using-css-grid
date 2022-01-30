@@ -111,6 +111,9 @@ nav ul li a:hover {
 }
 
 /* ----------------hero-section----- */
+.hero {
+    margin-bottom: 5rem;
+}
 
 .hero main {
     display: grid;
@@ -126,17 +129,132 @@ nav ul li a:hover {
 
 .right {
     background-color: var(--primary);
+    display: flex;
+    align-items: center;
 }
 
 .content-box {
     background-color: var(--white);
-    width: 45%;
-    position: absolute;
-    top: 25%;
-    left: 40%;
+    width: 515px;
+    margin-left: -400px;
+    /* position: absolute;
+    top: 35%;
+    left: 40%; */
     padding: 3rem;
 }
 
 .content-box p {
     color: var(--light-black);
+}
+
+@media (max-width:768px) {
+
+    .hero main {
+        grid-template-columns: 1fr;
+    }
+
+    h1,
+    h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .content-box {
+        width: 80%;
+        position: absolute;
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 3rem;
+        text-align: left;
+    }
+
+    .content-box h2 {
+        margin: 1rem 0;
+    }
+}
+
+/* -----------blog-------- */
+.blog-container {
+    max-width: 1080px;
+    margin: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr;
+}
+
+.blog {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+}
+
+.blog-post {
+    background-color: var(--blog-bg);
+    padding: 1.5rem;
+}
+
+.date {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--blog-text);
+}
+
+.blog-post h3 {
+    margin: 2rem 0;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: var(--dark-black);
+}
+
+.blog-post p {
+    color: var(--blog-text);
+    margin: 2rem 0;
+}
+
+/* ----------Sidebar-------------- */
+
+aside {
+    border: 1px solid red;
+    padding: 0 1rem;
+}
+
+aside header {
+    font-size: 3.2rem;
+    color: var(--dark-black);
+    margin-bottom: 1.5rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.wrapper .thumbnail img {
+    width: 150px;
+}
+
+.wrapper h3 {
+    font-size: 1.8rem;
+    color: var(--dark-black);
+    margin-bottom: 1rem;
+}
+
+.wrapper a {
+    font-size: 18px;
+    color: var(--primary);
+}
+
+.popular-post header {
+    margin-top: 2rem;
 }
