@@ -223,8 +223,7 @@ main {
 /* ----------Sidebar-------------- */
 
 aside {
-    border: 1px solid red;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 aside header {
@@ -257,6 +256,29 @@ aside header {
 
 .popular-post header {
     margin-top: 2rem;
+}
+
+@media (max-width:768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-container {
+        padding: 2rem;
+    }
+
+    .blog {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        padding: 2rem;
+    }
+
+    .wrapper .thumbnail img {
+        width: 180px;
+    }
+
 }
 
 /* ----------footer--------------- */
